@@ -1,0 +1,236 @@
+/* CardioSense AI - Professional Healthcare Dashboard Styling */
+
+:root {
+  --primary-blue: #0284c7;
+  --primary-dark: #0369a1;
+  --primary-light: #e0f2fe;
+  --accent-teal: #0d9488;
+  --bg-slate: #f8fafc;
+  --card-bg: #ffffff;
+  --card-border: #e2e8f0;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --risk-high-bg: #fef2f2;
+  --risk-high-border: #f87171;
+  --risk-high-text: #991b1b;
+  --risk-low-bg: #ecfdf5;
+  --risk-low-border: #34d399;
+  --risk-low-text: #065f46;
+  --warning-bg: #fffbeb;
+  --warning-border: #f59e0b;
+  --warning-text: #92400e;
+}
+
+/* Main Container Adjustments */
+.block-container {
+  padding-top: 2rem !important;
+  padding-bottom: 3rem !important;
+  max-width: 1200px !important;
+}
+
+/* Global Font Enhancements */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+/* Modern Card Containers */
+.clinical-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+  padding: 1.5rem 1.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.25rem;
+  transition: all 0.25s ease-in-out;
+}
+
+.clinical-card:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.07), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+}
+
+/* Stat / Metric Card */
+.metric-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.metric-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.35rem;
+}
+
+.metric-value {
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+.metric-subtext {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin-top: 0.35rem;
+}
+
+/* High Risk Banner */
+.result-card-elevated {
+  background: linear-gradient(135deg, #fff1f2 0%, #ffe4e6 100%);
+  border: 2px solid var(--risk-high-border);
+  border-radius: 16px;
+  padding: 1.75rem 2rem;
+  color: var(--risk-high-text);
+  box-shadow: 0 10px 20px -5px rgba(220, 38, 38, 0.15);
+  margin-bottom: 1.5rem;
+}
+
+/* Low Risk Banner */
+.result-card-low {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  border: 2px solid var(--risk-low-border);
+  border-radius: 16px;
+  padding: 1.75rem 2rem;
+  color: var(--risk-low-text);
+  box-shadow: 0 10px 20px -5px rgba(5, 150, 105, 0.15);
+  margin-bottom: 1.5rem;
+}
+
+/* Disclaimer Callout */
+.disclaimer-card {
+  background-color: #f8fafc;
+  border-left: 4px solid #64748b;
+  border-radius: 0 10px 10px 0;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  font-size: 0.88rem;
+  color: #475569;
+  line-height: 1.5;
+}
+
+/* Custom Badges */
+.badge-pill {
+  display: inline-block;
+  padding: 0.3rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badge-low {
+  background-color: #d1fae5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+}
+
+.badge-elevated {
+  background-color: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
+.badge-info {
+  background-color: #e0f2fe;
+  color: #0369a1;
+  border: 1px solid #bae6fd;
+}
+
+.badge-neutral {
+  background-color: #f1f5f9;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+}
+
+/* Section Header styling */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #f1f5f9;
+  margin-bottom: 1rem;
+  color: #1e293b;
+  font-weight: 600;
+}
+
+/* Hero Header Box */
+.hero-box {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0369a1 100%);
+  color: #ffffff;
+  padding: 2.25rem 2.5rem;
+  border-radius: 18px;
+  margin-bottom: 2rem;
+  box-shadow: 0 15px 30px -10px rgba(15, 23, 42, 0.3);
+}
+
+.hero-box h1 {
+  color: #ffffff !important;
+  font-size: 2.3rem;
+  font-weight: 800;
+  margin: 0 0 0.5rem 0;
+}
+
+.hero-box p {
+  color: #cbd5e1;
+  font-size: 1.08rem;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+/* Feature Grid Cards */
+.feature-box {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.25rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px -4px rgba(0, 0, 0, 0.06);
+}
+
+.feature-box .feature-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.feature-box .feature-title {
+  font-weight: 600;
+  color: #1e293b;
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+.feature-box .feature-desc {
+  font-size: 0.8rem;
+  color: #64748b;
+  line-height: 1.35;
+}
+
+/* Tab & Button tweaks */
+button[kind="primary"] {
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.02em !important;
+  transition: all 0.2s ease !important;
+}
+
+/* Sidebar styling tweaks */
+[data-testid="stSidebar"] {
+  border-right: 1px solid #e2e8f0;
+}
